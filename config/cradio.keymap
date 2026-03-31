@@ -139,7 +139,7 @@
 
               &kp HASH          &kp EXCL          &kp GRAVE        &kp PERCENT        &kp QMARK                &kp DLLR           &kp N7         &kp N8         &kp N9          &kp DQT
 
-            &ht LALT ESC        &kp LCTRL       &ht LSHIFT DEL       &kp TAB        &ht RGUI TILDE               &none            &kp N2      &ht RSHIFT N4   &ht RCTRL N5   &ht RALT SEMI
+            &ht LALT ESC        &kp LCTRL       &ht LSHIFT DEL       &kp TAB        &ht RGUI TILDE               &none            &kp N4      &ht RSHIFT N5   &ht RCTRL N6   &ht RALT SEMI
 
                &kp LT           &kp PIPE          &kp MINUS          &kp GT           &kp SPACE                &kp ASTRK          &kp N1          &kp N2        &kp N3          &kp AT
 
