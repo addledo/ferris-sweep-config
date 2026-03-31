@@ -154,7 +154,7 @@
             display-name = "NAV";
             bindings = <
 
-            &kp HASH          &kp EXCL          &kp GRAVE         &kp PERCENT       &kp QMARK                &kp DLLR        &kp HOME          &kp PG_UP          &kp END          &kp DQT
+           &caps_word          &kp EXCL          &kp GRAVE         &kp PERCENT       &kp CAPS                &kp DLLR        &kp HOME          &kp PG_UP          &kp END          &kp DQT
 
             &kp LALT          &kp LCTRL         &kp LSHIFT            &none        &ht LGUI TAB              &kp LEFT        &kp DOWN           &kp UP           &kp RIGHT     &ht RALT SEMI
 
