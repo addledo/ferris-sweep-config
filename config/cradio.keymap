@@ -17,10 +17,10 @@
 #define GAL 1
 #define SYM 2
 #define NUM 3
-#define FUN 4
-#define NAV 5
+#define NAV 4
 // Implement later:
-#define WIN 5
+#define FUN 5
+#define WIN 6
 
 
 // https://zmk.dev/docs/development/hardware-integration/soft-off-setup?advanced-methods=wakeup&kscan-type=dkscan
@@ -120,13 +120,13 @@
             display-name = "SYM";
             bindings = <
 
-            &kp HASH          &kp EXCL          &kp GRAVE        &kp PERCENT        &kp QMARK                &kp DLLR           &kp PLUS         &kp LBRC        &kp RBRC          &kp DQT
+               &kp HASH          &kp EXCL        &kp GRAVE        &kp PERCENT       &kp QMARK                &kp DLLR          &kp PLUS         &kp LBRC        &kp RBRC          &kp DQT
 
-            &ht LALT CARET  &ht LCTRL EQUAL  &ht LSHIFT UNDER       &kp DLLR     &ht LGUI ASTRK            &ht RGUI TILDE      &kp MINUS     &ht RSHIFT LPAR   &ht RCTRL RPAR   &ht RALT SEMI
+            &ht LALT CARET   &ht LCTRL EQUAL  &ht LSHIFT UNDER     &kp DLLR       &ht LGUI ASTRK          &ht RGUI TILDE       &kp MINUS     &ht RSHIFT LPAR   &ht RCTRL RPAR   &ht RALT SEMI
 
-            &kp LT            &kp PIPE          &kp MINUS            &kp GT        &kp SPACE                 &kp ASRK           &kp AMPS          &kp LBKT       &kp LBKT          &kp AT
+                &kp LT           &kp PIPE        &kp MINUS          &kp GT          &kp SPACE                &kp ASTRK         &kp AMPS          &kp LBKT       &kp LBKT          &kp AT
 
-                                                                   &lt COLON        &kp BSLH                 &kp FSLH           &kp SPACE
+                                                                   &kp COLON        &kp BSLH                 &kp FSLH          &kp SPACE
             >;
         };
 
@@ -139,11 +139,11 @@
 
               &kp HASH          &kp EXCL          &kp GRAVE        &kp PERCENT        &kp QMARK                &kp DLLR           &kp N7         &kp N8         &kp N9          &kp DQT
 
-            &ht LALT ESC        &kp LCTRL        &lt LSHIFT DEL     &kp TAB         &ht RGUI TILDE               &none            &kp N2      &ht RSHIFT N4   &ht RCTRL N5   &ht RALT SEMI
+            &ht LALT ESC        &kp LCTRL       &ht LSHIFT DEL       &kp TAB        &ht RGUI TILDE               &none            &kp N2      &ht RSHIFT N4   &ht RCTRL N5   &ht RALT SEMI
 
-               &kp LT           &kp PIPE          &kp MINUS          &kp GT           &kp SPACE                 &kp ASRK          &kp N1          &kp N2        &kp N3          &kp AT
+               &kp LT           &kp PIPE          &kp MINUS          &kp GT           &kp SPACE                &kp ASTRK          &kp N1          &kp N2        &kp N3          &kp AT
 
-                                                                    &lt COLON          &kp BSLH                 &kp FSLH         &kp SPACE
+                                                                    &kp COLON          &kp BSLH                 &kp FSLH         &kp SPACE
             >;
         };
 
@@ -154,13 +154,13 @@
             display-name = "NAV";
             bindings = <
 
-            &kp HASH          &kp EXCL          &kp GRAVE        &kp PERCENT        &kp QMARK                &kp DLLR           &kp HOME         &kp PG_UP        &kp END          &kp DQT
+            &kp HASH          &kp EXCL          &kp GRAVE         &kp PERCENT       &kp QMARK                &kp DLLR           &kp HOME          &kp PG_UP          &kp END          &kp DQT
 
-            &ht LALT CARET  &ht LCTRL EQUAL  &ht LSHIFT UNDER       &kp DLLR     &ht LGUI ASTRK            &ht RGUI LEFT        &kp DOWN        &ht RSHIFT UP   &ht RCTRL RIGHT   &ht RALT SEMI
+            &ht LALT CARET  &ht LCTRL EQUAL  &ht LSHIFT UNDER      &kp DLLR       &ht LGUI ASTRK            &ht RGUI LEFT        &kp DOWN        &ht RSHIFT UP    &ht RCTRL RIGHT   &ht RALT SEMI
 
-            &kp LT            &kp PIPE          &kp MINUS            &kp GT        &kp SPACE                 &kp ASRK          &kp LC(LEFT)      &kp PG_DN       &kp LC(RIGHT)        &none
+            &kp LT            &kp PIPE          &kp MINUS           &kp GT          &kp SPACE                &kp ASTRK         &kp LC(LEFT)       &kp PG_DN         &kp LC(RIGHT)        &none
 
-                                                                   &lt COLON        &kp BSLH                 &kp FSLH           &kp SPACE
+                                                                   &kp COLON         &kp BSLH                &kp FSLH           &kp SPACE
             >;
         };
 
