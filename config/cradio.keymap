@@ -124,7 +124,7 @@
 
             &ht LALT CARET   &ht LCTRL EQUAL  &ht LSHIFT UNDER     &kp DLLR       &ht LGUI ASTRK          &ht RGUI TILDE       &kp MINUS     &ht RSHIFT LPAR   &ht RCTRL RPAR   &ht RALT SEMI
 
-                &kp LT           &kp PIPE        &kp MINUS          &kp GT          &kp SPACE                &kp ASTRK         &kp AMPS          &kp LBKT       &kp LBKT          &kp AT
+                &kp LT           &kp PIPE        &kp MINUS          &kp GT          &kp SPACE                &kp ASTRK         &kp AMPS          &kp LBKT       &kp RBKT          &kp AT
 
                                                                    &kp COLON        &kp BSLH                 &kp FSLH          &kp SPACE
             >;
