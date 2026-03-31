@@ -89,7 +89,7 @@
 
               &kp Q        &kp W        &kp E        &kp R         &kp T                &kp Y           &kp U         &kp I       &kp O         &kp P
 
-            &ht LALT A  &ht LCTRL S  &ht LSHIFT D  &lt NAV F     &ht LGUI G           &ht RGUI H      &lt NAV J   &ht RSHIFT K  &ht RCTRL L  &ht RALT SEMI
+            &ht LALT A  &ht LCTRL S  &ht LSHIFT D  &lt NAV F     &ht LGUI G           &ht RGUI H      &lt NAV J   &ht RSHIFT K  &ht RCTRL L  &ht RALT TAB
 
               &kp Z        &kp X        &kp C        &kp V         &kp B                &kp N           &kp M       &kp COMMA    &kp DOT       &kp FSLH
 
@@ -120,11 +120,11 @@
             display-name = "SYM";
             bindings = <
 
-               &kp HASH          &kp EXCL        &kp GRAVE        &kp PERCENT       &kp QMARK                &kp DLLR          &kp PLUS         &kp LBRC        &kp RBRC          &kp DQT
+               &kp HASH          &kp EXCL        &kp GRAVE        &kp PERCENT       &kp QMARK                 &kp SQT          &kp PLUS         &kp LBRC        &kp RBRC          &kp DQT
 
             &ht LALT CARET   &ht LCTRL EQUAL  &ht LSHIFT UNDER     &kp DLLR       &ht LGUI ASTRK          &ht RGUI TILDE       &kp MINUS     &ht RSHIFT LPAR   &ht RCTRL RPAR   &ht RALT SEMI
 
-                &kp LT           &kp PIPE        &kp MINUS          &kp GT          &kp SPACE                &kp ASTRK         &kp AMPS          &kp LBKT       &kp RBKT          &kp AT
+                &kp LT           &kp PIPE        &kp MINUS          &kp GT          &kp SPACE                 &kp SQT         &kp AMPS          &kp LBKT       &kp RBKT          &kp AT
 
                                                                    &kp COLON        &kp BSLH                 &kp FSLH          &kp SPACE
             >;
@@ -154,13 +154,13 @@
             display-name = "NAV";
             bindings = <
 
-            &kp HASH          &kp EXCL          &kp GRAVE         &kp PERCENT       &kp QMARK                &kp DLLR           &kp HOME          &kp PG_UP          &kp END          &kp DQT
+            &kp HASH          &kp EXCL          &kp GRAVE         &kp PERCENT       &kp QMARK                &kp DLLR        &kp HOME          &kp PG_UP          &kp END          &kp DQT
 
-            &ht LALT CARET  &ht LCTRL EQUAL  &ht LSHIFT UNDER      &kp DLLR       &ht LGUI ASTRK            &ht RGUI LEFT        &kp DOWN        &ht RSHIFT UP    &ht RCTRL RIGHT   &ht RALT SEMI
+            &ht LALT CARET  &ht LCTRL EQUAL  &ht LSHIFT UNDER      &kp DLLR        &ht LGUI TAB              &kp LEFT        &kp DOWN           &kp UP           &kp RIGHT     &ht RALT SEMI
 
-            &kp LT            &kp PIPE          &kp MINUS           &kp GT          &kp SPACE                &kp ASTRK         &kp LC(LEFT)       &kp PG_DN         &kp LC(RIGHT)        &none
+            &kp DEL            &kp PIPE          &kp MINUS           &kp GT          &kp SPACE               &kp ASTRK     &kp LC(LEFT)       &kp PG_DN         &kp LC(RIGHT)        &none
 
-                                                                   &kp COLON         &kp BSLH                &kp FSLH           &kp SPACE
+                                                                   &kp COLON         &kp BSLH                &kp FSLH        &kp SPACE
             >;
         };
 
