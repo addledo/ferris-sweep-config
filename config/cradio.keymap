@@ -57,14 +57,13 @@
         zmk,battery = &vbatt;
     };
     behaviors {
-        #define _HTH(hold, tap) {\
+        #define _HTH(hold, tap) \
             tap_dance_mod_tap {                               \
                     compatible = "zmk,behavior-tap-dance";    \
                     #binding-cells = <0>;                     \
                     tapping-term-ms = <200>;                  \
                     bindings = <&lt hold tap>, <&kp tap>;    \
-                }                                             \
-        }
+            }
 
         ht: hold_tap {
             display-name = "hold_tap";
@@ -86,7 +85,7 @@
             delay-ms = <0>;                   // 10
         };
 
-        _bpsc: _HTH(SYM, bspc);
+        _bspc: _HTH(SYM, bspc);
     };
 
 
