@@ -88,17 +88,17 @@
             display-name = "DEFAULT";
             bindings = <
 //    ┌────────────┬────────────┬────────────┬─────────────┬────────────┐   ┌────────────┬────────────┬────────────┬────────────┬────────────┐
-//    │  lt B< Q   │     W      │  lt NUM E  │      R      │     T      │   │     Y      │     U      │     I      │     O      │     P      │
+//    │  lt B< Q   │     W      │  lt NUM E  │  lt WIN R   │     T      │   │     Y      │  lt WIN U  │     I      │     O      │     P      │
 //    ├────────────┼────────────┼────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
 //    │ &ht lalt A │ &ht lctl S │ &ht lsft D │  lt NAV F   │ &ht lgui G │   │ &ht rgui H │  lt NAV J  │ &ht rsft K │ &ht rctl L │ &ht ralt ; │
 //    ├────────────┼────────────┼────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
-//    │     Z      │     X      │     C      │      V      │     B      │   │     N      │     M      │     ,      │     .      │    tab     │
+//    │     Z      │     X      │     C      │  lt FUN V   │     B      │   │     N      │     M      │     ,      │     .      │    tab     │
 //    └────────────┴────────────┴────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┴────────────┴────────────┘
 //                                           │ lt SYM bspc │ lt NUM esc │   │ lt NUM ent │ lt SYM spc │
 //                                           └─────────────┴────────────┘   └────────────┴────────────┘
-  &lt BLT Q    &kp W         &lt NUM E      &kp R          &kp T             &kp Y         &kp U           &kp I          &kp O         &kp P
+  &lt BLT Q    &kp W         &lt NUM E      &lt WIN R      &kp T             &kp Y         &lt WIN U       &kp I          &kp O         &kp P
   &ht LALT A   &ht LCTRL S   &ht LSHIFT D   &lt NAV F      &ht LGUI G        &ht RGUI H    &lt NAV J       &ht RSHIFT K   &ht RCTRL L   &ht RALT SEMI
-  &kp Z        &kp X         &kp C          &kp V          &kp B             &kp N         &kp M           &kp COMMA      &kp DOT       &kp TAB
+  &kp Z        &kp X         &kp C          &lt FUN V      &kp B             &kp N         &kp M           &kp COMMA      &kp DOT       &kp TAB
                                             &lt SYM BSPC   &lt NUM ESC       &lt NUM RET   &lt SYM SPACE
             >;
         };
@@ -110,20 +110,21 @@
             display-name = "GALLIUM";
             bindings = <
 //    ┌────────────┬────────────┬────────────┬─────────────┬────────────┐   ┌────────────┬────────────┬────────────┬────────────┬────────────┐
-//    │     B      │     L      │     D      │      C      │     V      │   │     J      │     Y      │     O      │     U      │    esc     │
+//    │  lt B< B   │     L      │     D      │  lt WIN C   │     V      │   │     J      │  lt WIN Y  │     O      │     U      │    esc     │
 //    ├────────────┼────────────┼────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
 //    │ &ht lalt N │ &ht lctl R │ &ht lsft T │  lt NAV S   │ &ht lgui G │   │ &ht rgui P │  lt NAV H  │ &ht rsft A │ &ht rctl E │ &ht ralt I │
 //    ├────────────┼────────────┼────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
-//    │     X      │     Q      │     M      │      W      │     Z      │   │     K      │     F      │     ,      │     .      │     /      │
+//    │     X      │     Q      │     M      │      W      │  lt FUN Z  │   │     K      │     F      │     ,      │     .      │     /      │
 //    └────────────┴────────────┴────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┴────────────┴────────────┘
 //                                           │ lt SYM bspc │ lt NUM esc │   │ lt NUM ent │ lt SYM spc │
 //                                           └─────────────┴────────────┘   └────────────┴────────────┘
-  &kp B        &kp L         &kp D          &kp C          &kp V             &kp J         &kp Y           &kp O          &kp U         &kp ESC
+  &lt BLT B    &kp L         &kp D          &lt WIN C      &kp V             &kp J         &lt WIN Y       &kp O          &kp U         &kp ESC
   &ht LALT N   &ht LCTRL R   &ht LSHIFT T   &lt NAV S      &ht LGUI G        &ht RGUI P    &lt NAV H       &ht RSHIFT A   &ht RCTRL E   &ht RALT I
-  &kp X        &kp Q         &kp M          &kp W          &kp Z             &kp K         &kp F           &kp COMMA      &kp DOT       &kp FSLH
+  &kp X        &kp Q         &kp M          &kp W          &lt FUN Z         &kp K         &kp F           &kp COMMA      &kp DOT       &kp FSLH
                                             &lt SYM BSPC   &lt NUM ESC       &lt NUM RET   &lt SYM SPACE
             >;
         };
+
 
 
 
@@ -168,6 +169,8 @@
             >;
         };
 
+
+
         nav_layer {
             display-name = "NAV";
             bindings = <
@@ -186,6 +189,8 @@
                           &none   &none       &none      &kp SPACE
             >;
         };
+
+
 
         bluetooth_layer {
             display-name = "BLUETOOTH";
@@ -208,6 +213,47 @@
 
 
 
+
+        fun_layer {
+            display-name = "FUN";
+            bindings = <
+//    ┌──────┬──────────────┬──────────────┬─────┬─────┐   ┌─────┬─────┬─────────────┬─────────────┬──────┐
+//    │      │     f17      │     f18      │ f19 │ f20 │   │ f23 │ f7  │     f8      │     f9      │      │
+//    ├──────┼──────────────┼──────────────┼─────┼─────┤   ├─────┼─────┼─────────────┼─────────────┼──────┤
+//    │ lalt │ &ht lctl f14 │ &ht lsft f15 │ f16 │ f21 │   │ f24 │ f4  │ &ht rsft f5 │ &ht rctl f6 │ ralt │
+//    ├──────┼──────────────┼──────────────┼─────┼─────┤   ├─────┼─────┼─────────────┼─────────────┼──────┤
+//    │      │     f11      │     f12      │ f13 │ f22 │   │     │ f1  │     f2      │     f3      │      │
+//    └──────┴──────────────┴──────────────┼─────┼─────┤   ├─────┼─────┼─────────────┴─────────────┴──────┘
+//                                         │     │     │   │     │     │
+//                                         └─────┴─────┘   └─────┴─────┘
+  &none      &kp F17         &kp F18          &kp F19   &kp F20       &kp F23   &kp F7   &kp F8          &kp F9         &none
+  &kp LALT   &ht LCTRL F14   &ht LSHIFT F15   &kp F16   &kp F21       &kp F24   &kp F4   &ht RSHIFT F5   &ht RCTRL F6   &kp RALT
+  &none      &kp F11         &kp F12          &kp F13   &kp F22       &none     &kp F1   &kp F2          &kp F3         &none
+                                              &none     &none         &none     &none
+            >;
+        };
+
+
+
+
+        win_layer {
+            display-name = "WIN";
+            bindings = <
+//    ┌──────┬────────────────────┬────────────────────┬───────────┬─────┐   ┌─────┬───────────┬────────────────────┬────────────────────┬──────┐
+//    │      │     lalt(f22)      │     lalt(f23)      │ lalt(f24) │     │   │     │ lctl(f22) │     lctl(f23)      │     lctl(f24)      │      │
+//    ├──────┼────────────────────┼────────────────────┼───────────┼─────┤   ├─────┼───────────┼────────────────────┼────────────────────┼──────┤
+//    │ lalt │ &ht lctl lalt(f19) │ &ht lsft lalt(f20) │ lalt(f21) │     │   │     │ lctl(f19) │ &ht rsft lctl(f20) │ &ht rctl lctl(f21) │ ralt │
+//    ├──────┼────────────────────┼────────────────────┼───────────┼─────┤   ├─────┼───────────┼────────────────────┼────────────────────┼──────┤
+//    │      │     lalt(f16)      │     lalt(f17)      │ lalt(f18) │     │   │     │ lctl(f16) │     lctl(f17)      │     lctl(f18)      │      │
+//    └──────┴────────────────────┴────────────────────┼───────────┼─────┤   ├─────┼───────────┼────────────────────┴────────────────────┴──────┘
+//                                                     │           │     │   │     │           │
+//                                                     └───────────┴─────┘   └─────┴───────────┘
+  &none      &kp LA(F22)         &kp LA(F23)          &kp LA(F24)   &none       &none   &kp LC(F22)   &kp LC(F23)          &kp LC(F24)         &none
+  &kp LALT   &ht LCTRL LA(F19)   &ht LSHIFT LA(F20)   &kp LA(F21)   &none       &none   &kp LC(F19)   &ht RSHIFT LC(F20)   &ht RCTRL LC(F21)   &kp RALT
+  &none      &kp LA(F16)         &kp LA(F17)          &kp LA(F18)   &none       &none   &kp LC(F16)   &kp LC(F17)          &kp LC(F18)         &none
+                                                      &none         &none       &none   &none
+            >;
+        };
 
 
     };
