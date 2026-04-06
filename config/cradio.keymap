@@ -88,7 +88,7 @@
             display-name = "DEFAULT";
             bindings = <
 //    ┌────────────┬────────────┬────────────┬─────────────┬────────────┐   ┌────────────┬────────────┬────────────┬────────────┬────────────┐
-//    │     Q      │     W      │  lt NUM E  │      R      │     T      │   │     Y      │     U      │     I      │     O      │     P      │
+//    │  lt B< Q   │     W      │  lt NUM E  │      R      │     T      │   │     Y      │     U      │     I      │     O      │     P      │
 //    ├────────────┼────────────┼────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
 //    │ &ht lalt A │ &ht lctl S │ &ht lsft D │  lt NAV F   │ &ht lgui G │   │ &ht rgui H │  lt NAV J  │ &ht rsft K │ &ht rctl L │ &ht ralt ; │
 //    ├────────────┼────────────┼────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
@@ -96,7 +96,7 @@
 //    └────────────┴────────────┴────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┴────────────┴────────────┘
 //                                           │ lt SYM bspc │ lt NUM esc │   │ lt NUM ent │ lt SYM spc │
 //                                           └─────────────┴────────────┘   └────────────┴────────────┘
-  &kp Q        &kp W         &lt NUM E      &kp R          &kp T             &kp Y         &kp U           &kp I          &kp O         &kp P
+  &lt BLT Q    &kp W         &lt NUM E      &kp R          &kp T             &kp Y         &kp U           &kp I          &kp O         &kp P
   &ht LALT A   &ht LCTRL S   &ht LSHIFT D   &lt NAV F      &ht LGUI G        &ht RGUI H    &lt NAV J       &ht RSHIFT K   &ht RCTRL L   &ht RALT SEMI
   &kp Z        &kp X         &kp C          &kp V          &kp B             &kp N         &kp M           &kp COMMA      &kp DOT       &kp TAB
                                             &lt SYM BSPC   &lt NUM ESC       &lt NUM RET   &lt SYM SPACE
@@ -190,18 +190,18 @@
         bluetooth_layer {
             display-name = "BLUETOOTH";
             bindings = <
-//    ┌─────┬─────┬─────┬─────┬─────┐   ┌─────┬───────┬───────┬───────┬─────────┐
-//    │     │     │     │     │     │   │     │  clr  │  clr  │  clr  │ clr_ALL │
-//    ├─────┼─────┼─────┼─────┼─────┤   ├─────┼───────┼───────┼───────┼─────────┤
-//    │     │     │     │     │     │   │     │ sel 3 │ sel 4 │       │         │
-//    ├─────┼─────┼─────┼─────┼─────┤   ├─────┼───────┼───────┼───────┼─────────┤
-//    │     │     │     │     │     │   │     │ sel 0 │ sel 1 │ sel 2 │         │
-//    └─────┴─────┴─────┼─────┼─────┤   ├─────┼───────┼───────┴───────┴─────────┘
-//                      │     │     │   │     │       │
-//                      └─────┴─────┘   └─────┴───────┘
-  &none   &none   &none   &none   &none       &none   &kp BT_CLR     &kp BT_CLR     &kp BT_CLR     &kp BT_CLR_ALL
-  &none   &none   &none   &none   &none       &none   &kp BT_SEL 3   &kp BT_SEL 4   &none          &none
-  &none   &none   &none   &none   &none       &none   &kp BT_SEL 0   &kp BT_SEL 1   &kp BT_SEL 2   &none
+//    ┌─────┬─────┬─────┬─────┬─────┐   ┌─────┬──────────┬──────────┬──────────┬────────────┐
+//    │     │     │     │     │     │   │     │  bt_clr  │  bt_clr  │  bt_clr  │ bt_clr_ALL │
+//    ├─────┼─────┼─────┼─────┼─────┤   ├─────┼──────────┼──────────┼──────────┼────────────┤
+//    │     │     │     │     │     │   │     │ bt_sel 3 │ bt_sel 4 │          │            │
+//    ├─────┼─────┼─────┼─────┼─────┤   ├─────┼──────────┼──────────┼──────────┼────────────┤
+//    │     │     │     │     │     │   │     │ bt_sel 0 │ bt_sel 1 │ bt_sel 2 │            │
+//    └─────┴─────┴─────┼─────┼─────┤   ├─────┼──────────┼──────────┴──────────┴────────────┘
+//                      │     │     │   │     │          │
+//                      └─────┴─────┘   └─────┴──────────┘
+  &none   &none   &none   &none   &none       &none   &bt BT_CLR     &bt BT_CLR     &bt BT_CLR     &bt BT_CLR_ALL
+  &none   &none   &none   &none   &none       &none   &bt BT_SEL 3   &bt BT_SEL 4   &none          &none
+  &none   &none   &none   &none   &none       &none   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &none
                           &none   &none       &none   &none
             >;
         };
