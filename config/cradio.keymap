@@ -19,7 +19,6 @@
 #define NUM 3
 #define NAV 4
 #define BLT 5
-// Implement later:
 #define FUN 6
 #define WIN 7
 
@@ -49,6 +48,13 @@
     };
 };
 
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <210>;
+    quick-tap-ms = <170>;
+};
+
+
 / {
     vbatt: vbatt {
         compatible = "zmk,battery-nrf-vddh";
@@ -63,15 +69,17 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <210>;
+            quick-tap-ms = <170>;
             bindings = <&kp>, <&kp>;
         };
+
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <300>;    // 40
             delay-ms = <0>;                   // 0
         };
+
         msc {
             acceleration-exponent = <0>;      // 0
             time-to-max-speed-ms = <40>;      // 500
