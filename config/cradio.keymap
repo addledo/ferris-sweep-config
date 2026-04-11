@@ -140,18 +140,18 @@
             display-name = "SYM";
             bindings = <
 //    ┌────────────┬────────────┬────────────┬───┬────────────┐   ┌────────────┬─────┬────────────┬────────────┬────────────┐
-//    │     #      │     !      │     `      │ % │     ?      │   │     &      │  +  │     {      │     }      │     "      │
+//    │    iso#    │     !      │     `      │ % │     ?      │   │     &      │  +  │     {      │     }      │     "      │
 //    ├────────────┼────────────┼────────────┼───┼────────────┤   ├────────────┼─────┼────────────┼────────────┼────────────┤
 //    │ &ht lalt ^ │ &ht lctl = │ &ht lsft _ │ $ │ &ht lgui * │   │ &ht rgui ~ │  -  │ &ht rsft ( │ &ht rctl ) │ &ht ralt ' │
 //    ├────────────┼────────────┼────────────┼───┼────────────┤   ├────────────┼─────┼────────────┼────────────┼────────────┤
-//    │     <      │     |      │     -      │ > │    spc     │   │     @      │  ;  │     [      │     ]      │     /      │
+//    │     <      │     |      │     -      │ > │    spc     │   │     @      │  ;  │     [      │     ]      │            │
 //    └────────────┴────────────┴────────────┼───┼────────────┤   ├────────────┼─────┼────────────┴────────────┴────────────┘
-//                                           │ / │     \      │   │     :      │ spc │
+//                                           │ / │    iso\    │   │     :      │ spc │
 //                                           └───┴────────────┘   └────────────┴─────┘
-  &kp HASH         &kp EXCL          &kp GRAVE          &kp PERCENT   &kp QMARK            &kp AMPS         &kp PLUS    &kp LBRC          &kp RBRC         &kp DQT
+  &kp NUHS         &kp EXCL          &kp GRAVE          &kp PERCENT   &kp QMARK            &kp AMPS         &kp PLUS    &kp LBRC          &kp RBRC         &kp DQT
   &ht LALT CARET   &ht LCTRL EQUAL   &ht LSHIFT UNDER   &kp DLLR      &ht LGUI ASTRK       &ht RGUI TILDE   &kp MINUS   &ht RSHIFT LPAR   &ht RCTRL RPAR   &ht RALT SQT
-  &kp LT           &kp PIPE          &kp MINUS          &kp GT        &kp SPACE            &kp AT           &kp SEMI    &kp LBKT          &kp RBKT         &kp FSLH
-                                                        &kp FSLH      &kp BSLH             &kp COLON        &kp SPACE
+  &kp LT           &kp PIPE          &kp MINUS          &kp GT        &kp SPACE            &kp AT           &kp SEMI    &kp LBKT          &kp RBKT         &none
+                                                        &kp FSLH      &kp NUBS             &kp COLON        &kp SPACE
             >;
         };
 
