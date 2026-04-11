@@ -146,12 +146,12 @@
 //    ├────────────┼────────────┼────────────┼───┼────────────┤   ├────────────┼─────┼────────────┼────────────┼────────────┤
 //    │     <      │     |      │     -      │ > │    spc     │   │     @      │  ;  │     [      │     ]      │     /      │
 //    └────────────┴────────────┴────────────┼───┼────────────┤   ├────────────┼─────┼────────────┴────────────┴────────────┘
-//                                           │ : │     \      │   │     /      │ spc │
+//                                           │ / │     \      │   │     :      │ spc │
 //                                           └───┴────────────┘   └────────────┴─────┘
   &kp HASH         &kp EXCL          &kp GRAVE          &kp PERCENT   &kp QMARK            &kp AMPS         &kp PLUS    &kp LBRC          &kp RBRC         &kp DQT
   &ht LALT CARET   &ht LCTRL EQUAL   &ht LSHIFT UNDER   &kp DLLR      &ht LGUI ASTRK       &ht RGUI TILDE   &kp MINUS   &ht RSHIFT LPAR   &ht RCTRL RPAR   &ht RALT SQT
   &kp LT           &kp PIPE          &kp MINUS          &kp GT        &kp SPACE            &kp AT           &kp SEMI    &kp LBKT          &kp RBKT         &kp FSLH
-                                                        &kp COLON     &kp BSLH             &kp FSLH         &kp SPACE
+                                                        &kp FSLH      &kp BSLH             &kp COLON        &kp SPACE
             >;
         };
 
@@ -182,19 +182,19 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-//    ┌─────┬─────┬─────┬─────┬─────┐   ┌──────┬────────────┬──────┬────────────┬─────┐
-//    │     │     │     │     │     │   │      │    home    │ pgup │    end     │     │
-//    ├─────┼─────┼─────┼─────┼─────┤   ├──────┼────────────┼──────┼────────────┼─────┤
-//    │     │     │     │     │     │   │ left │    down    │  up  │    rght    │     │
-//    ├─────┼─────┼─────┼─────┼─────┤   ├──────┼────────────┼──────┼────────────┼─────┤
-//    │     │     │     │     │     │   │      │ lctl(left) │ pgdn │ lctl(rght) │     │
-//    └─────┴─────┴─────┼─────┼─────┤   ├──────┼────────────┼──────┴────────────┴─────┘
-//                      │     │     │   │      │    spc     │
-//                      └─────┴─────┘   └──────┴────────────┘
-  &none   &none   &none   &none   &none       &none      &kp HOME       &kp PG_UP   &kp END         &none
-  &none   &none   &none   &none   &none       &kp LEFT   &kp DOWN       &kp UP      &kp RIGHT       &none
-  &none   &none   &none   &none   &none       &none      &kp LC(LEFT)   &kp PG_DN   &kp LC(RIGHT)   &none
-                          &none   &none       &none      &kp SPACE
+//    ┌───────┬─────┬─────┬─────┬─────┐   ┌──────┬────────────┬──────┬────────────┬─────┐
+//    │       │     │     │     │     │   │      │    home    │ pgup │    end     │     │
+//    ├───────┼─────┼─────┼─────┼─────┤   ├──────┼────────────┼──────┼────────────┼─────┤
+//    │ capsw │     │     │     │     │   │ left │    down    │  up  │    rght    │     │
+//    ├───────┼─────┼─────┼─────┼─────┤   ├──────┼────────────┼──────┼────────────┼─────┤
+//    │ caps  │     │     │     │     │   │      │ lctl(left) │ pgdn │ lctl(rght) │     │
+//    └───────┴─────┴─────┼─────┼─────┤   ├──────┼────────────┼──────┴────────────┴─────┘
+//                        │     │     │   │      │    spc     │
+//                        └─────┴─────┘   └──────┴────────────┘
+  &none        &none   &none   &none   &none       &none      &kp HOME       &kp PG_UP   &kp END         &none
+  &caps_word   &none   &none   &none   &none       &kp LEFT   &kp DOWN       &kp UP      &kp RIGHT       &none
+  &kp caps     &none   &none   &none   &none       &none      &kp LC(LEFT)   &kp PG_DN   &kp LC(RIGHT)   &none
+                               &none   &none       &none      &kp SPACE
             >;
         };
 
