@@ -51,7 +51,7 @@
 &lt {
     flavor = "balanced";
     tapping-term-ms = <220>;
-    quick-tap-ms = <190>;
+    quick-tap-ms = <210>;
 };
 
 
@@ -70,7 +70,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <210>;
-            quick-tap-ms = <170>;
+            quick-tap-ms = <210>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -122,13 +122,13 @@
 //    ├────────────┼────────────┼────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
 //    │ &ht lalt N │ &ht lctl R │ &ht lsft T │  lt NAV S   │ &ht lgui G │   │ &ht rgui P │  lt NAV H  │ &ht rsft A │ &ht rctl E │ &ht ralt I │
 //    ├────────────┼────────────┼────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
-//    │     X      │     Q      │     M      │      W      │  lt FUN Z  │   │     K      │     F      │     ,      │     .      │     /      │
+//    │     X      │     Q      │     M      │      W      │  lt FUN Z  │   │     K      │     F      │     ,      │     .      │    tab     │
 //    └────────────┴────────────┴────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┴────────────┴────────────┘
 //                                           │ lt SYM bspc │ lt NUM esc │   │ lt NUM ent │ lt SYM spc │
 //                                           └─────────────┴────────────┘   └────────────┴────────────┘
   &lt BLT B    &kp L         &lt NUM D      &lt WIN C      &kp V             &kp J         &lt WIN Y       &lt NUM O      &kp U         &kp ESC
   &ht LALT N   &ht LCTRL R   &ht LSHIFT T   &lt NAV S      &ht LGUI G        &ht RGUI P    &lt NAV H       &ht RSHIFT A   &ht RCTRL E   &ht RALT I
-  &kp X        &kp Q         &kp M          &kp W          &lt FUN Z         &kp K         &kp F           &kp COMMA      &kp DOT       &kp FSLH
+  &kp X        &kp Q         &kp M          &kp W          &lt FUN Z         &kp K         &kp F           &kp COMMA      &kp DOT       &kp TAB
                                             &lt SYM BSPC   &lt NUM ESC       &lt NUM RET   &lt SYM SPACE
             >;
         };
@@ -139,19 +139,19 @@
         symbol_layer {
             display-name = "SYM";
             bindings = <
-//    ┌────────────┬────────────┬────────────┬───┬────────────┐   ┌────────────┬─────┬────────────┬────────────┬────────────┐
-//    │    iso#    │     !      │     `      │ % │     ?      │   │     &      │  +  │     {      │     }      │     "      │
-//    ├────────────┼────────────┼────────────┼───┼────────────┤   ├────────────┼─────┼────────────┼────────────┼────────────┤
-//    │ &ht lalt ^ │ &ht lctl = │ &ht lsft _ │ $ │ &ht lgui * │   │ &ht rgui ~ │  -  │ &ht rsft ( │ &ht rctl ) │ &ht ralt ' │
-//    ├────────────┼────────────┼────────────┼───┼────────────┤   ├────────────┼─────┼────────────┼────────────┼────────────┤
-//    │     <      │     |      │     -      │ > │    spc     │   │     @      │  ;  │     [      │     ]      │     #      │
-//    └────────────┴────────────┴────────────┼───┼────────────┤   ├────────────┼─────┼────────────┴────────────┴────────────┘
-//                                           │ / │    iso\    │   │     :      │ spc │
-//                                           └───┴────────────┘   └────────────┴─────┘
-  &kp NUHS         &kp EXCL          &kp GRAVE          &kp PERCENT   &kp QMARK            &kp AMPS         &kp PLUS    &kp LBRC          &kp RBRC         &kp DQT
+//    ┌────────────┬────────────┬────────────┬───┬────────────┐   ┌────────────┬───┬────────────┬────────────┬────────────┐
+//    │     #      │     !      │     `      │ % │     ?      │   │     &      │ + │     {      │     }      │     "      │
+//    ├────────────┼────────────┼────────────┼───┼────────────┤   ├────────────┼───┼────────────┼────────────┼────────────┤
+//    │ &ht lalt ^ │ &ht lctl = │ &ht lsft _ │ $ │ &ht lgui * │   │ &ht rgui ~ │ - │ &ht rsft ( │ &ht rctl ) │ &ht ralt ' │
+//    ├────────────┼────────────┼────────────┼───┼────────────┤   ├────────────┼───┼────────────┼────────────┼────────────┤
+//    │     <      │     |      │     -      │ > │    iso\    │   │     @      │ ; │     [      │     ]      │    iso#    │
+//    └────────────┴────────────┴────────────┼───┼────────────┤   ├────────────┼───┼────────────┴────────────┴────────────┘
+//                                           │ / │     \      │   │    spc     │ : │
+//                                           └───┴────────────┘   └────────────┴───┘
+  &kp HASH         &kp EXCL          &kp GRAVE          &kp PERCENT   &kp QMARK            &kp AMPS         &kp PLUS    &kp LBRC          &kp RBRC         &kp DQT
   &ht LALT CARET   &ht LCTRL EQUAL   &ht LSHIFT UNDER   &kp DLLR      &ht LGUI ASTRK       &ht RGUI TILDE   &kp MINUS   &ht RSHIFT LPAR   &ht RCTRL RPAR   &ht RALT SQT
-  &kp LT           &kp PIPE          &kp MINUS          &kp GT        &kp SPACE            &kp AT           &kp SEMI    &kp LBKT          &kp RBKT         &kp HASH
-                                                        &kp FSLH      &kp NUBS             &kp COLON        &kp SPACE
+  &kp LT           &kp PIPE          &kp MINUS          &kp GT        &kp NUBS             &kp AT           &kp SEMI    &kp LBKT          &kp RBKT         &kp NUHS
+                                                        &kp FSLH      &kp BSLH             &kp SPACE        &kp COLON
             >;
         };
 
@@ -161,19 +161,19 @@
         number_layer {
             display-name = "NUM";
             bindings = <
-//    ┌──────────────┬──────┬──────────────┬──────┬──────┐   ┌─────┬───┬────────────┬────────────┬─────┐
-//    │              │      │              │      │      │   │     │ 7 │     8      │     9      │     │
-//    ├──────────────┼──────┼──────────────┼──────┼──────┤   ├─────┼───┼────────────┼────────────┼─────┤
-//    │ &ht lalt esc │ lctl │ &ht lsft del │ tab  │ rgui │   │     │ 4 │ &ht rsft 5 │ &ht rctl 6 │     │
-//    ├──────────────┼──────┼──────────────┼──────┼──────┤   ├─────┼───┼────────────┼────────────┼─────┤
-//    │              │      │              │      │      │   │     │ 1 │     2      │     3      │     │
-//    └──────────────┴──────┴──────────────┼──────┼──────┤   ├─────┼───┼────────────┴────────────┴─────┘
-//                                         │ bspc │      │   │ spc │ 0 │
-//                                         └──────┴──────┘   └─────┴───┘
-  &none          &none       &none            &none      &none          &none       &kp N7   &kp N8          &kp N9         &none
-  &ht LALT ESC   &kp LCTRL   &ht LSHIFT DEL   &kp TAB    &kp RGUI       &none       &kp N4   &ht RSHIFT N5   &ht RCTRL N6   &none
-  &none          &none       &none            &none      &none          &none       &kp N1   &kp N2          &kp N3         &none
-                                              &kp BSPC   &none          &kp SPACE   &kp N0
+//    ┌─────┬──────┬──────┬──────┬──────┐   ┌─────┬───┬────────────┬────────────┬─────┐
+//    │     │      │      │      │      │   │     │ 7 │     8      │     9      │     │
+//    ├─────┼──────┼──────┼──────┼──────┤   ├─────┼───┼────────────┼────────────┼─────┤
+//    │ esc │ lctl │ lsft │ tab  │ rgui │   │     │ 4 │ &ht rsft 5 │ &ht rctl 6 │     │
+//    ├─────┼──────┼──────┼──────┼──────┤   ├─────┼───┼────────────┼────────────┼─────┤
+//    │     │      │      │      │      │   │     │ 1 │     2      │     3      │  .  │
+//    └─────┴──────┴──────┼──────┼──────┤   ├─────┼───┼────────────┴────────────┴─────┘
+//                        │ bspc │      │   │ spc │ 0 │
+//                        └──────┴──────┘   └─────┴───┘
+  &none     &none       &none        &none      &none          &none       &kp N7   &kp N8          &kp N9         &none
+  &kp ESC   &kp LCTRL   &kp LSHIFT   &kp TAB    &kp RGUI       &none       &kp N4   &ht RSHIFT N5   &ht RCTRL N6   &none
+  &none     &none       &none        &none      &none          &none       &kp N1   &kp N2          &kp N3         &kp DOT
+                                     &kp BSPC   &none          &kp SPACE   &kp N0
             >;
         };
 
@@ -185,16 +185,16 @@
 //    ┌───────┬─────┬─────┬─────┬─────┐   ┌──────┬────────────┬──────┬────────────┬─────┐
 //    │       │     │     │     │     │   │      │    home    │ pgup │    end     │     │
 //    ├───────┼─────┼─────┼─────┼─────┤   ├──────┼────────────┼──────┼────────────┼─────┤
-//    │ capsw │     │     │     │     │   │ left │    down    │  up  │    rght    │     │
+//    │ capsw │     │ del │ tab │     │   │ left │    down    │  up  │    rght    │     │
 //    ├───────┼─────┼─────┼─────┼─────┤   ├──────┼────────────┼──────┼────────────┼─────┤
 //    │ caps  │     │     │     │     │   │      │ lctl(left) │ pgdn │ lctl(rght) │     │
 //    └───────┴─────┴─────┼─────┼─────┤   ├──────┼────────────┼──────┴────────────┴─────┘
 //                        │     │     │   │      │    spc     │
 //                        └─────┴─────┘   └──────┴────────────┘
-  &none        &none   &none   &none   &none       &none      &kp HOME       &kp PG_UP   &kp END         &none
-  &caps_word   &none   &none   &none   &none       &kp LEFT   &kp DOWN       &kp UP      &kp RIGHT       &none
-  &kp caps     &none   &none   &none   &none       &none      &kp LC(LEFT)   &kp PG_DN   &kp LC(RIGHT)   &none
-                               &none   &none       &none      &kp SPACE
+  &none        &none   &none     &none     &none       &none      &kp HOME       &kp PG_UP   &kp END         &none
+  &caps_word   &none   &kp DEL   &kp TAB   &none       &kp LEFT   &kp DOWN       &kp UP      &kp RIGHT       &none
+  &kp caps     &none   &none     &none     &none       &none      &kp LC(LEFT)   &kp PG_DN   &kp LC(RIGHT)   &none
+                                 &none     &none       &none      &kp SPACE
             >;
         };
 
