@@ -102,12 +102,12 @@
 //    ├────────────┼────────────┼────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
 //    │     Z      │     X      │     C      │  lt FUN V   │     B      │   │     N      │     M      │     ,      │     .      │    tab     │
 //    └────────────┴────────────┴────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┴────────────┴────────────┘
-//                                           │ lt SYM bspc │ lt NUM esc │   │ lt NUM ent │ lt SYM spc │
+//                                           │ lt SYM bspc │ lt NUM esc │   │ lt NAV ent │ lt SYM spc │
 //                                           └─────────────┴────────────┘   └────────────┴────────────┘
   &lt BLT Q    &kp W         &lt NUM E      &lt WIN R      &kp T             &kp Y         &lt WIN U       &lt NUM I      &kp O         &kp P
   &ht LALT A   &ht LCTRL S   &ht LSHIFT D   &lt NAV F      &ht LGUI G        &ht RGUI H    &lt NAV J       &ht RSHIFT K   &ht RCTRL L   &ht RALT SEMI
   &kp Z        &kp X         &kp C          &lt FUN V      &kp B             &kp N         &kp M           &kp COMMA      &kp DOT       &kp TAB
-                                            &lt SYM BSPC   &lt NUM ESC       &lt NUM RET   &lt SYM SPACE
+                                            &lt SYM BSPC   &lt NUM ESC       &lt NAV RET   &lt SYM SPACE
             >;
         };
 
@@ -118,18 +118,18 @@
             display-name = "GALLIUM";
             bindings = <
 //    ┌────────────┬────────────┬────────────┬─────────────┬────────────┐   ┌────────────┬────────────┬────────────┬────────────┬────────────┐
-//    │  lt B< B   │     L      │  lt NUM D  │  lt WIN C   │     V      │   │     J      │  lt WIN Y  │  lt NUM O  │     U      │    esc     │
+//    │  lt B< B   │     L      │  lt NUM D  │  lt WIN C   │     V      │   │     J      │  lt WIN Y  │  lt NUM O  │     U      │     '      │
 //    ├────────────┼────────────┼────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
 //    │ &ht lalt N │ &ht lctl R │ &ht lsft T │  lt NAV S   │ &ht lgui G │   │ &ht rgui P │  lt NAV H  │ &ht rsft A │ &ht rctl E │ &ht ralt I │
 //    ├────────────┼────────────┼────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┤
 //    │     X      │     Q      │     M      │      W      │  lt FUN Z  │   │     K      │     F      │     ,      │     .      │    tab     │
 //    └────────────┴────────────┴────────────┼─────────────┼────────────┤   ├────────────┼────────────┼────────────┴────────────┴────────────┘
-//                                           │ lt SYM bspc │ lt NUM esc │   │ lt NUM ent │ lt SYM spc │
+//                                           │ lt SYM bspc │ lt NUM esc │   │ lt NAV ent │ lt SYM spc │
 //                                           └─────────────┴────────────┘   └────────────┴────────────┘
-  &lt BLT B    &kp L         &lt NUM D      &lt WIN C      &kp V             &kp J         &lt WIN Y       &lt NUM O      &kp U         &kp ESC
+  &lt BLT B    &kp L         &lt NUM D      &lt WIN C      &kp V             &kp J         &lt WIN Y       &lt NUM O      &kp U         &kp SQT
   &ht LALT N   &ht LCTRL R   &ht LSHIFT T   &lt NAV S      &ht LGUI G        &ht RGUI P    &lt NAV H       &ht RSHIFT A   &ht RCTRL E   &ht RALT I
   &kp X        &kp Q         &kp M          &kp W          &lt FUN Z         &kp K         &kp F           &kp COMMA      &kp DOT       &kp TAB
-                                            &lt SYM BSPC   &lt NUM ESC       &lt NUM RET   &lt SYM SPACE
+                                            &lt SYM BSPC   &lt NUM ESC       &lt NAV RET   &lt SYM SPACE
             >;
         };
 
