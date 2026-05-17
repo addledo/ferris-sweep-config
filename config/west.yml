@@ -13,7 +13,7 @@ manifest:
       import: app/west.yml
     - name: zmk-behavior-report
       remote: nxtkb
-      revision: main
+      revision: 476f43da1f98b4a6150c9c0e499a257bd64a29a0
       import: west.yml
   self:
     path: config
